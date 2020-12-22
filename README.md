@@ -2,6 +2,6 @@
 
 ```sh
 yarn install
-yarn prepare:mainnet
-yarn build
+yarn codegen
+yarn deploy:mainnet
 ```
