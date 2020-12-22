@@ -1,17 +1,17 @@
 {
-  "name": "helysia-subgraph",
+  "name": "helysiav1",
   "license": "MIT",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ alcuadradotech/helysia-subgraph",
-    "create-local": "graph create --node http://localhost:8020/ alcuadradotech/helysia-subgraph",
-    "remove-local": "graph remove --node http://localhost:8020/ alcuadradotech/helysia-subgraph",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 alcuadradotech/helysia-subgraph",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ alcuadradotech/helysiav1",
+    "create-local": "graph create --node http://localhost:8020/ alcuadradotech/helysiav1",
+    "remove-local": "graph remove --node http://localhost:8020/ alcuadradotech/helysiav1",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 alcuadradotech/helysiav1",
     "prepare:mainnet": "mustache config/mainnet.json subgraph.template.yaml > subgraph.yaml",
     "prepare:rinkeby": "mustache config/rinkeby.json subgraph.template.yaml > subgraph.yaml",
-    "deploy:rinkeby": "yarn prepare:rinkeby && graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ alcuadradotech/helysia-subgraph",
-    "deploy:mainnet": "yarn prepare:mainnet && graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ alcuadradotech/helysia-subgraph"
+    "deploy:rinkeby": "yarn prepare:rinkeby && graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ alcuadradotech/helysiav1",
+    "deploy:mainnet": "yarn prepare:mainnet && graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ alcuadradotech/helysiav1"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.17.1",
